@@ -1,0 +1,21 @@
+/* quote of the day : Try your best to get what you can with tailwind, and when you start spending too long and getting nowhere, just go for the plain css */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@1,257&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Import tailwind css cli */
+@import "tailwindcss";
+
+
+/* if you want to edit with regular css go to output.css  */
+
+@theme{
+  --font-overpass: "Overpass", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* color */
+  --clr-orange:oklch(0.7093 0.1889 47.74);
+  --clr-white: oklch(1 0 0);
+  --clr-grey-500: oklch(0.6968 0.0227 259.94);
+  --clr-grey-900: oklch(0.2939 0.0207 253.61);
+  --clr-grey-950: oklch(0.19 0.0067 258.37);
+}

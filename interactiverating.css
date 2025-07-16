@@ -1,3 +1,6 @@
+/* Import tailwind css cli */
+@import "tailwindcss";
+
 /* font Overpass */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -10,6 +13,8 @@ html {
   margin: 0;
 }
 
+
+
 :root{
   /* color */
   --clr-orange:hsl(25, 97%, 53%);
@@ -19,8 +24,13 @@ html {
   --clr-grey-950: hsl(216, 12%, 8%);
 
   /* font */
-  font-family: "Overpass", sans-serif;
-  
+  --font-overpass: "Overpass", sans-serif;
+
   /* spacing */
   --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
 }
+
+body{
+  font-family: var(--font-overpass);
+}
+
