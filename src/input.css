@@ -9,6 +9,7 @@
 /* if you want to edit with regular css go to output.css  */
 
 @theme{
+  /* font */
   --font-overpass: "Overpass", sans-serif;
   --font-inter: "Inter", sans-serif;
 
@@ -18,4 +19,8 @@
   --clr-grey-500: oklch(0.6968 0.0227 259.94);
   --clr-grey-900: oklch(0.2939 0.0207 253.61);
   --clr-grey-950: oklch(0.19 0.0067 258.37);
+  --clr-bluish: oklch(0.6371 0.1426 258.37);
+
+  /* spacing */
+  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
 }

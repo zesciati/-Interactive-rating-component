@@ -8,14 +8,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-overpass: "Overpass", sans-serif;
-    --font-inter: "Inter", sans-serif;
-    --clr-orange: oklch(0.7093 0.1889 47.74);
+    --clr-white: oklch(1 0 0);
     --clr-grey-500: oklch(0.6968 0.0227 259.94);
-    --clr-grey-900: oklch(0.2939 0.0207 253.61);
-    --clr-grey-950: oklch(0.19 0.0067 258.37);
+    --clr-bluish: oklch(0.6371 0.1426 258.37);
   }
 }
 @layer base {
@@ -167,19 +166,58 @@
   .contents {
     display: contents;
   }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-\(--clr-grey-500\) {
     background-color: var(--clr-grey-500);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .font-\(family-name\:--font-overpass\) {
     font-family: var(--font-overpass);
+  }
+  .text-\(--clr-white\) {
+    color: var(--clr-white);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -189,6 +227,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-outline-style: solid;
     }
   }
