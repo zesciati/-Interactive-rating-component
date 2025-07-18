@@ -9,12 +9,17 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-black: #000;
+    --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-overpass: "Overpass", sans-serif;
     --clr-white: oklch(1 0 0);
     --clr-grey-500: oklch(0.6968 0.0227 259.94);
-    --clr-bluish: oklch(0.6371 0.1426 258.37);
+    --clr-grey-900: oklch(0.2939 0.0207 253.61);
+    --clr-grey-950: oklch(0.19 0.0067 258.37);
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
   }
 }
 @layer base {
@@ -163,6 +168,9 @@
   }
 }
 @layer utilities {
+  .m-\(--space-s\) {
+    margin: var(--space-s);
+  }
   .contents {
     display: contents;
   }
@@ -190,6 +198,12 @@
   .justify-center {
     justify-content: center;
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -197,8 +211,35 @@
   .bg-\(--clr-grey-500\) {
     background-color: var(--clr-grey-500);
   }
+  .bg-\(--clr-grey-900\) {
+    background-color: var(--clr-grey-900);
+  }
+  .bg-\(--clr-grey-950\) {
+    background-color: var(--clr-grey-950);
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .p-\(--space-3xs\) {
+    padding: var(--space-3xs);
+  }
+  .p-\(--space-m\) {
+    padding: var(--space-m);
+  }
+  .p-\[1rem0\] {
+    padding: 1rem0;
+  }
+  .p-\[1rem0px\] {
+    padding: 1rem0px;
+  }
+  .p-\[1rem\] {
+    padding: 1rem;
+  }
+  .py-\[1rem\] {
+    padding-block: 1rem;
+  }
+  .py-px {
+    padding-block: 1px;
   }
   .font-\(family-name\:--font-overpass\) {
     font-family: var(--font-overpass);
@@ -212,6 +253,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+}
+@layer theme {
+  :root {
+    --tw-color-red-500: oklch(0.637 0.237 25.331);
   }
 }
 @property --tw-border-style {
