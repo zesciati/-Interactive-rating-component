@@ -11,7 +11,6 @@
 @theme{
   /* font */
   --font-overpass: "Overpass", sans-serif;
-  --font-inter: "Inter", sans-serif;
 
   /* color */
   --clr-orange:oklch(0.7093 0.1889 47.74);
@@ -25,6 +24,16 @@
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
   --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
   --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+
+  /* font-size */
+  --step--2: clamp(0.5642rem, 0.4961rem + 0.3405vw, 0.76rem);
+  --step--1: clamp(0.6771rem, 0.5822rem + 0.4746vw, 0.95rem);
+  --step-0: clamp(0.8925rem, 0.6821rem + 0.6522vw, 1.1875rem);
+  --step-1: clamp(0.975rem, 0.7978rem + 0.8859vw, 1.4844rem);
+  --step-2: clamp(1.17rem, 0.9316rem + 1.1921vw, 1.8555rem);
+  --step-3: clamp(1.404rem, 1.0856rem + 1.5919vw, 2.3193rem);
+  --step-4: clamp(1.6848rem, 1.2624rem + 2.1119vw, 2.8992rem);
+  --step-5: clamp(2.0218rem, 1.4645rem + 2.7864vw, 3.624rem);
 }
 
 @layer theme {

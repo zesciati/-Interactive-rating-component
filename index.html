@@ -16,13 +16,21 @@
   <!-- parent -->
   <div class="flex-container min-h-screen flex justify-center items-center">
     <!-- children -->
-    <div class="flex-item bg-(--clr-grey-900) p-(--space-m) m-(--space-s) flex-col rounded-md">
+    <div class="flex-item bg-(--clr-grey-900) p-(--space-m) m-(--space-s) flex-col rounded-md max-w-[425px]">
       <img src="./images/icon-star.svg" alt="" class="bg-(--clr-grey-500) p-(--space-3xs) rounded-full" />
-      <h1 class="text-(--clr-white) py-[1rem]">How did we do?</h1>
-      <p class="text-(--clr-white)">
+      <h1 class="text-(--clr-white) py-[1rem] text-2xl font-bold">How did we do?</h1>
+      <p class="text-(--clr-white) text-(length:--step-0)">
         Please let us know how we did with your support request. All feedback
-        is appreciated to help up improve our offering!
+        is appreciated to help us improve our offering!
       </p>
+      <!-- direction-row, justify-content -->
+      <ul>
+        <li><button type="submit" value="1">1</button></li>
+        <li><button type="submit" value="2">2</button></li>
+        <li><button type="submit" value="3">3</button></li>
+        <li><button type="submit" value="4">4</button></li>
+        <li><button type="submit" value="5">5</button></li>
+      </ul>
     </div>
   </div>
 </body>
