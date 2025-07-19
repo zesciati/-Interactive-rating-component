@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 
-/* if you want to edit with regular css go to output.css  */
+/* NOTE if you want to edit with regular css do it in here  */
 
 @theme{
   /* font */
@@ -56,4 +56,10 @@ li button:hover{
 li button:focus{
   background-color: var(--clr-white);
   color: var(--clr-grey-950);
+}
+
+@media screen and (max-width:320px) {
+  li button{
+    margin-inline: .13rem;
+  }
 }
