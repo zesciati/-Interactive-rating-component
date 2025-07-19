@@ -18,6 +18,7 @@
   --clr-grey-500: oklch(0.6968 0.0227 259.94);
   --clr-grey-900: oklch(0.2939 0.0207 253.61);
   --clr-grey-950: oklch(0.19 0.0067 258.37);
+  --clr-bg-grey:oklch(0.4087 0.0198 251.53);
   --clr-bluish: oklch(0.6371 0.1426 258.37);
 
   /* spacing */
@@ -36,8 +37,23 @@
   --step-5: clamp(2.0218rem, 1.4645rem + 2.7864vw, 3.624rem);
 }
 
-@layer theme {
-  :root {
-    --tw-color-red-500: oklch(0.637 0.237 25.331);
-  }
+li button{
+  background-color: var(--clr-bg-grey);
+  border-radius: 25px;  
+  padding: .72em 1.2em ;
+}
+
+li button:hover{
+  background-color: var(--clr-orange);
+  color: var(--clr-grey-900);
+}
+
+li button:hover{
+  background-color: var(--clr-orange);
+  color: var(--clr-grey-900);
+}
+
+li button:focus{
+  background-color: var(--clr-white);
+  color: var(--clr-grey-950);
 }
