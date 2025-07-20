@@ -23,6 +23,7 @@
 
   /* spacing */
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-4xs: clamp(0.9125rem, 0.3125rem + 0vw, 0.3125rem);
   --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
   --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
 
@@ -35,6 +36,16 @@
   --step-3: clamp(1.404rem, 1.0856rem + 1.5919vw, 2.3193rem);
   --step-4: clamp(1.6848rem, 1.2624rem + 2.1119vw, 2.8992rem);
   --step-5: clamp(2.0218rem, 1.4645rem + 2.7864vw, 3.624rem);
+
+  /* font-size 14-18 thank you */
+  --step--2nw: clamp(0.6076rem, 0.5681rem + 0.1688vw, 0.72rem);
+  --step--1nw: clamp(0.7292rem, 0.669rem + 0.2567vw, 0.9rem);
+  --step-0nw: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
+  --step-1nw: clamp(1.05rem, 0.9246rem + 0.5352vw, 1.4063rem);
+  --step-2nw: clamp(1.26rem, 1.0847rem + 0.7479vw, 1.7578rem);
+  --step-3nw: clamp(1.512rem, 1.2707rem + 1.0295vw, 2.1973rem);
+  --step-4nw: clamp(1.8144rem, 1.4862rem + 1.4005vw, 2.7466rem);
+  --step-5nw: clamp(2.1773rem, 1.735rem + 1.8869vw, 3.4332rem);
 }
 
 li button{
@@ -59,7 +70,7 @@ li button:focus{
 }
 
  /* -------------------------------- thank-you ------------------------------- */
-  .flex-item-thank h1, .flex-item-thank p{
+  .flex-item-thank h1, .flex-item-thank p:last-of-type{
   text-align: center;
   }
 
