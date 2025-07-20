@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/src/output.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <title>Zak | Interactive rating component</title>
 </head>
 
@@ -16,7 +15,7 @@
   <!-- ------------------------------- parent -------------------------------- -->
   <div class="flex-container min-h-screen flex justify-center items-center">
     <!-- ---------------------------- rating state ------------------------------->
-    <section class="flex-item bg-(--clr-grey-900) p-(--space-m) m-(--space-s) flex-col rounded-md max-w-[425px]">
+    <!-- <section class="flex-item bg-(--clr-grey-900) p-(--space-m) m-(--space-s) flex-col rounded-md max-w-[425px]">
       <img src="./images/icon-star.svg" alt="" class="bg-(--clr-bg-grey) p-(--space-3xs) rounded-full" />
       <h1 class="text-(--clr-white) py-[1rem] text-2xl font-bold">How did we do?</h1>
       <p class="text-(--clr-grey-500) text-(length:--step-0)">
@@ -30,12 +29,17 @@
         <li><button type="submit" value="4">4</button></li>
         <li><button type="submit" value="5">5</button></li>
       </ul>
-      <button type="submit" value="SUBMIT" class="bg-(--clr-orange) min-w-full rounded-2xl p-(--step--2) font-bold hover:bg-(--clr-white) focus:bg-[#FFA673]  ">SUBMIT</button>
-    </section>
+      <button type="submit" value="SUBMIT" class="bg-(--clr-orange) min-w-full rounded-2xl p-(--step--2) font-bold hover:bg-(--clr-white) focus:bg-[#FFA673]  ">SUBMIT</button> 
+    </section> -->
     <!------------------------------ rating state end ------------------------------->
 
     <!-- ------------------------------ thank you ------------------------------ -->
-
+    <section class="flex-item-thank bg-(--clr-grey-900) p-(--space-m) m-(--space-s) flex-col rounded-md max-w-[425px]">
+      <img src="./images/illustration-thank-you.svg" alt="" class="mx-auto">
+      <p class="text-(--clr-orange)">You selected 4 out 5</p>
+      <h1 class="text-(--clr-white)  text-2xl my-[1rem]" >Thank you!</h1>
+      <p class="text-(--clr-grey-500)">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+</section>
   </div>
 </body>
 

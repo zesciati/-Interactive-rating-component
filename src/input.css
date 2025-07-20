@@ -58,6 +58,13 @@ li button:focus{
   color: var(--clr-grey-950);
 }
 
+ /* -------------------------------- thank-you ------------------------------- */
+  .flex-item-thank h1, .flex-item-thank p{
+  text-align: center;
+  }
+
+
+
 @media screen and (max-width:320px) {
   li button{
     margin-inline: .13rem;
