@@ -74,7 +74,9 @@ li button:focus{
   text-align: center;
   }
 
-
+.hidden{
+  display: none;
+}
 
 @media screen and (max-width:320px) {
   li button{
