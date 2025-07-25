@@ -27,7 +27,7 @@
   --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
   --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
 
-  /* font-size */
+  /* font-size rating */
   --step--2: clamp(0.5642rem, 0.4961rem + 0.3405vw, 0.76rem);
   --step--1: clamp(0.6771rem, 0.5822rem + 0.4746vw, 0.95rem);
   --step-0: clamp(0.8925rem, 0.6821rem + 0.6522vw, 1.1875rem);
